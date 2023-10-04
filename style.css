@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* adjust the gradient and transition effect */
+.calc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, #d9e432, #26c897, #d33ab2);
+    background-size: 300% 300%;
+    animation: pulse 5s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.calculator-gif {
+    width: 45px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+body {
+    background-color: #99f6f6;
+}
+
+.container {
+    max-width: 1000px;
+    width: 40%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 0.4rem solid rgba(7, 7, 7, 0.907);
+    
+}
+
+.header {
+    font-size: 3rem;
+}
+
+.result {
+    color: #060606;
+    background-color: rgba(248, 245, 245, 0.877);
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 1rem 1.8rem;
+    border-radius: 0.9rem;
+    width: 100%;
+}
+
+.operator {
+    background-color: #710133;
+    color: rgb(231, 220, 223);
+    font-size: 3rem;
+    border-radius: 0.6rem;
+    padding: 2rem;
+    width: 23%;
+    text-align: center;
+    margin: 0.8rem 0;
+}
+
+.num-container {
+    width: 75%;
+}
+
+.num,
+.clear {
+    background-color: #bc6bce;
+    color: rgb(12, 12, 12);
+    font-size: 3rem;
+    border-radius: 0.7rem;
+    padding: 2rem;
+    width: 30%;
+    text-align: center;
+    margin: 0.8rem 0;
+}
+
+.clear {
+    background-color: #d62a0c;
+    color: rgb(14, 15, 15);
+}
+
+.equal {
+    background-color: #01801f;
+    color: rgb(11, 11, 11);
+    font-size: 3rem;
+    border-radius: 0.6rem;
+    padding: 14rem 2rem;
+    width:22%;
+    margin: 0.8rem 0;
+}
+
+
+footer {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .container {
+        max-width: 7200px;
+    }
+}
