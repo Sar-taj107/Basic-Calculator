@@ -31,7 +31,7 @@ result.addEventListener("keyup", (event) => {
     }
 });
 
-// Add an event listener for the backspace button
+// Add an event listener for the backspace button.
 const backspace = document.querySelector(".backspace");
 backspace.addEventListener("click", () => {
     if (result.value.length > 0) {
