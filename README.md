@@ -23,7 +23,7 @@ https://hacktoberfest.com/
 
 ## How to Contribute
 
-To contribute to our Tech-Quiz:
+To contribute to our Basic-Calculator:
 
 1. **Fork the Repository:** Click the "Fork" button at the top right of this repository to create a copy in your GitHub account. 🍴
 
