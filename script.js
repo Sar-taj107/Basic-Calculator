@@ -1,41 +1,40 @@
+const result = document.querySelector(".result");
+const clear = document.querySelector(".clear");
+const equal = document.querySelector(".equal");
+const allBtn = document.querySelectorAll(".btn");
+const backspaceButton = document.querySelector(".backspace");
 
-let result = document.querySelector(".result");
-let clear = document.querySelector(".clear");
-let equal = document.querySelector(".equal");
-let allBtn = document.querySelectorAll(".btn");
-
-allBtn.forEach(input => {
-    input.addEventListener("click", () => {
-        if ((input.textContent === `0` || input.textContent === `.`) && result.value.lenght === 0) {
-            return
-        }
-        result.value += input.textContent;
-    });
+allBtn.forEach((input) => {
+  input.addEventListener("click", () => {
+    if (
+      (input.textContent === "0" || input.textContent === ".") &&
+      result.value.length === 0
+    ) {
+      return;
+    }
+    result.value += input.textContent;
+  });
 });
 
 equal.addEventListener("click", () => {
-    if (result.value !== "") {
-        result.value = eval(result.value);
-    } else {
-        alert("Enter valid input");
-    }
+  if (result.value !== "") {
+    result.value = eval(result.value);
+  } else {
+    alert("Enter valid input");
+  }
 });
 
 clear.addEventListener("click", () => {
-    result.value = "";
+  result.value = "";
+});
+
+backspaceButton.addEventListener("click", () => {
+  let currentValue = result.value;
+  result.value = currentValue.slice(0, -1);
 });
 
 result.addEventListener("keyup", (event) => {
-    if (event.key === "Enter" && result.value !== "") {
-        result.value = eval(result.value);
-    }
+  if (event.key === "Enter" && result.value !== "") {
+    result.value = eval(result.value);
+  }
 });
-
-// Add an event listener for the backspace button.
-const backspace = document.querySelector(".backspace");
-backspace.addEventListener("click", () => {
-    if (result.value.length > 0) {
-        result.value = result.value.slice(0, -1); // Remove the last character
-    }
-});
-
