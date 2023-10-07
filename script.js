@@ -39,3 +39,16 @@ backspace.addEventListener("click", () => {
     }
 });
 
+
+//  Modified code 
+
+let backspaceBtn = document.querySelector(".backspace");
+
+backspaceBtn.addEventListener("click", () => {
+    if (result.value.length > 0) {
+        result.value = result.value.slice(0, -1); // Remove the last character
+    }
+});
+
+
+
