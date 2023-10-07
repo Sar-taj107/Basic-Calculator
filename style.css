@@ -80,11 +80,17 @@ body {
     font-size: 3rem;
     border-radius: 0.6rem;
     padding: 2rem;
-    width: 23%;
+    width: 18%;
     text-align: center;
     margin: 0.8rem 0;
+   
 }
-
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
 .num-container {
     width: 75%;
 }
@@ -126,7 +132,7 @@ footer {
 
 @media only screen and (max-width: 760px) {  
     .container {
-        max-width: 7200px;
+        width: 90%;
     }
 }
 

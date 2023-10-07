@@ -15,6 +15,9 @@ allBtn.forEach(input => {
 
 equal.addEventListener("click", () => {
     if (result.value !== "") {
+        if(result.value.includes('^')){
+            result.value = result.value.replace("^", "**");
+        }
         result.value = eval(result.value);
     } else {
         alert("Enter valid input");
