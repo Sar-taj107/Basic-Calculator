@@ -225,5 +225,216 @@ footer {
       opacity: 1;
     }
   }
+
+  /* Theme selector from index.html */
+  
+  #theme-selector {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+
+
+  .num[theme="default"] {
+    background-color: #bc6bce;
+    color: rgb(231, 220, 223);
+  }
+
+  .num[theme="minimal"] {
+    background-color: #f8f8f8;
+    color: #000;
+  }
+
+  .num[theme="minimal-dark"] {
+    background-color: #202020;
+    color: #fff;
+  }
+
+  .num[theme="mint"] {
+    background-color: #b9b7b7;
+    color: #000;
+  }
+
+  .num[theme="mint-dark"] {
+    background-color: #5c5b5b;
+    color: #fff;
+  }
+  
+  .operator[theme="default"] {
+    background-color: #710133;
+    color: rgb(231, 220, 223);
+  }
+
+  .operator[theme="minimal"] {
+    background-color: #a2ecff;
+    color: #000;
+  }
+
+  .operator[theme="minimal-dark"] {
+    background-color: #435da1;
+    color: #fff;
+  }
+
+  .operator[theme="mint"] {
+    background-color: #62b93f;
+    color: #000;
+  } 
+
+  .operator[theme="mint-dark"] {
+    background-color: #549e37;
+    color: #fff;
+  }
+
+  .calc[theme="default"] {
+    background: linear-gradient(45deg, #d9e432, #26c897, #d33ab2);
+    background-size: 300% 300%;
+    animation: pulse 5s ease infinite;
+  }
+
+  .calc[theme="minimal"] {
+    background: #ececec;
+  }
+
+  .calc[theme="minimal-dark"] {
+    background: #161616;
+  }
+
+  .calc[theme="mint"] {
+    background: #75816f;
+  }
+
+  .calc[theme="mint-dark"] {
+    background: #3a463a;
+  }
+
+  .result[theme="default"] {
+    background-color: rgba(248, 245, 245, 0.877);
+    color: #060606;
+  }
+
+  .result[theme="minimal"] {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+
+  .result[theme="minimal-dark"] {
+    background-color: #202020;
+    color: #fff;
+  }
+
+  .result[theme="mint"] {
+    background-color: #b9b7b7;
+    color: #000;
+  }
+
+  .result[theme="mint-dark"] {
+    background-color: #5c5b5b;
+    color: #fff;
+  }
+
+  .clear[theme="default"] {
+    background-color: #d62a0c;
+    color: rgb(14, 15, 15);
+  }
+
+  .clear[theme="minimal"] {
+    background-color: #a2ecff;
+    color: #000;
+  }
+
+  .clear[theme="minimal-dark"] {
+    background-color: #435da1;
+    color: #fff;
+  }
+
+  .clear[theme="mint"] {
+    background-color: #62b93f;
+    color: #000;
+  }
+
+  .clear[theme="mint-dark"] {
+    background-color: #549e37;
+    color: #fff;
+  }
+
+  .equal[theme="default"] {
+    background-color: #01801f;
+    color: rgb(11, 11, 11);
+  }
+
+  .equal[theme="minimal"] {
+    background-color: #a2ecff;
+    color: #000;
+  }
+
+  .equal[theme="minimal-dark"] {
+    background-color: #435da1;
+    color: #fff;
+  }
+
+  .equal[theme="mint"] {
+    background-color: #62b93f;
+    color: #000;
+  }
+
+  .equal[theme="mint-dark"] {
+    background-color: #549e37;
+    color: #fff;
+  }
+
+  #msg[theme="default"] {
+    color: #000;
+  }
+
+  #msg[theme="minimal"] {
+    color: #000;
+  }
+
+  #msg[theme="minimal-dark"] {
+    color: #fff;
+  }
+
+  #msg[theme="mint"] {
+    color: #000;
+  }
+
+  #msg[theme="mint-dark"] {
+    color: #fff;
+  }
+
+  .header[theme="default"] {
+    color: #000;
+  }
+
+  .header[theme="minimal"] {
+    color: #000;
+  }
+
+  .header[theme="minimal-dark"] {
+    color: #fff;
+  }
+
+  .header[theme="mint"] {
+    color: #000;
+  }
+
+  .header[theme="mint-dark"] {
+    color: #fff;
+  }
+
+
+
+  
+
   
 

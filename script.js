@@ -2,6 +2,7 @@ let result = document.querySelector(".result");
 let clear = document.querySelector(".clear");
 let equal = document.querySelector(".equal");
 let allBtn = document.querySelectorAll(".btn");
+const theme_selecor = document.querySelector("#theme-selector");
 
 /**
  * Validates and formats user input in an input field.
@@ -94,4 +95,44 @@ backspace.addEventListener("click", () => {
   if (result.value.length > 0) {
     result.value = result.value.slice(0, -1); // Remove the last character
   }
+});
+
+// Add an event listener for the theme selector.
+theme_selecor.addEventListener("change", (event) => {
+  // Get all the number buttons, and set their "theme" attribute to the selected theme.
+  const number_buttons = document.querySelectorAll(".num");
+  number_buttons.forEach((button) => {
+    button.setAttribute("theme", event.target.value);
+  });
+
+  // Get all the operator buttons, and set their "theme" attribute to the selected theme.
+  const operator_buttons = document.querySelectorAll(".operator");
+  operator_buttons.forEach((button) => {
+    button.setAttribute("theme", event.target.value);
+  });
+
+  // Get the calc container, and set its "theme" attribute to the selected theme.
+  const calc_container = document.querySelector(".calc");
+  calc_container.setAttribute("theme", event.target.value);
+
+  // Get the result input, and set its "theme" attribute to the selected theme.
+  const result_input = document.querySelector(".result");
+  result_input.setAttribute("theme", event.target.value);
+
+  // Get the clear button, and set its "theme" attribute to the selected theme.
+  const clear_button = document.querySelector(".clear");
+  clear_button.setAttribute("theme", event.target.value);
+
+  // Get the equal button, and set its "theme" attribute to the selected theme.
+  const equal_button = document.querySelector(".equal");
+  equal_button.setAttribute("theme", event.target.value);
+
+  // Get the element with ID "msg", and set its "theme" attribute to the selected theme.
+  const msg = document.querySelector("#msg");
+  msg.setAttribute("theme", event.target.value);
+
+  // Get the element with class "header", and set its "theme" attribute to the selected theme.
+  const header = document.querySelector(".header");
+  header.setAttribute("theme", event.target.value);
+
 });
